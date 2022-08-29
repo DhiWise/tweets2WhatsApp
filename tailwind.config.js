@@ -1,0 +1,47 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { lg: "1120px", xl: "1281px", "2xl": "1441px", "3xl": "1729px" },
+    extend: {
+      colors: {
+        bluegray_50: "#ebeef0",
+        gray_901: "#0f1419",
+        blue_500: "#1da1f2",
+        gray_800: "#4f4f4f",
+        gray_900: "#14171a",
+        light_blue_400: "#29abe2",
+        blue_500_87: "#1da1f287",
+        gray_50: "#f7f9fa",
+        bluegray_601: "#536471",
+        bluegray_600: "#5b7083",
+        black_900_99: "#00000099",
+        black_900: "#000000",
+        pink_500: "#f4245e",
+        black_900_14: "#00000014",
+        white_A700: "#ffffff",
+      },
+      borderRadius: {
+        radius3: "3px",
+        radius15: "15px",
+        radius151: "1.5px",
+        radius16: "16px",
+        radius50: "50%",
+        radius195: "19.5px",
+        radius245: "24.5px",
+      },
+      fontFamily: {
+        helveticaneue: "HelveticaNeue",
+        helveticaneue1: "Helvetica Neue",
+        sfcompactdisplay: "SF Compact Display",
+        segoeui: "Segoe UI",
+      },
+      letterSpacing: { ls1: "1px" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
